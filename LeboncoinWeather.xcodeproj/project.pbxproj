@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4DD51CA22F09BFE006B356A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51C922F09BFE006B356A /* AppDelegate.swift */; };
+		C4DD51CC22F09BFE006B356A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51CB22F09BFE006B356A /* ViewController.swift */; };
+		C4DD51CF22F09BFE006B356A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DD51CD22F09BFE006B356A /* Main.storyboard */; };
+		C4DD51D222F09BFE006B356A /* LeboncoinWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51D022F09BFE006B356A /* LeboncoinWeather.xcdatamodeld */; };
+		C4DD51D422F09C03006B356A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DD51D322F09C03006B356A /* Assets.xcassets */; };
+		C4DD51D722F09C03006B356A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DD51D522F09C03006B356A /* LaunchScreen.storyboard */; };
+		C4DD51E222F09C03006B356A /* LeboncoinWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51E122F09C03006B356A /* LeboncoinWeatherTests.swift */; };
+		C4DD51ED22F09C03006B356A /* LeboncoinWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51EC22F09C03006B356A /* LeboncoinWeatherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4DD51DE22F09C03006B356A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DD51BE22F09BFE006B356A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DD51C522F09BFE006B356A;
+			remoteInfo = LeboncoinWeather;
+		};
+		C4DD51E922F09C03006B356A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DD51BE22F09BFE006B356A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DD51C522F09BFE006B356A;
+			remoteInfo = LeboncoinWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4DD51C622F09BFE006B356A /* LeboncoinWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD51C922F09BFE006B356A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4DD51CB22F09BFE006B356A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4DD51CE22F09BFE006B356A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4DD51D122F09BFE006B356A /* LeboncoinWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeboncoinWeather.xcdatamodel; sourceTree = "<group>"; };
+		C4DD51D322F09C03006B356A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4DD51D622F09C03006B356A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4DD51D822F09C03006B356A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DD51DD22F09C03006B356A /* LeboncoinWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD51E122F09C03006B356A /* LeboncoinWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinWeatherTests.swift; sourceTree = "<group>"; };
+		C4DD51E322F09C03006B356A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DD51E822F09C03006B356A /* LeboncoinWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD51EC22F09C03006B356A /* LeboncoinWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinWeatherUITests.swift; sourceTree = "<group>"; };
+		C4DD51EE22F09C03006B356A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DD51C322F09BFE006B356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51DA22F09C03006B356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51E522F09C03006B356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4DD51BD22F09BFE006B356A = {
+			isa = PBXGroup;
+			children = (
+				C4DD51C822F09BFE006B356A /* LeboncoinWeather */,
+				C4DD51E022F09C03006B356A /* LeboncoinWeatherTests */,
+				C4DD51EB22F09C03006B356A /* LeboncoinWeatherUITests */,
+				C4DD51C722F09BFE006B356A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DD51C722F09BFE006B356A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD51C622F09BFE006B356A /* LeboncoinWeather.app */,
+				C4DD51DD22F09C03006B356A /* LeboncoinWeatherTests.xctest */,
+				C4DD51E822F09C03006B356A /* LeboncoinWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DD51C822F09BFE006B356A /* LeboncoinWeather */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD51C922F09BFE006B356A /* AppDelegate.swift */,
+				C4DD51CB22F09BFE006B356A /* ViewController.swift */,
+				C4DD51CD22F09BFE006B356A /* Main.storyboard */,
+				C4DD51D322F09C03006B356A /* Assets.xcassets */,
+				C4DD51D522F09C03006B356A /* LaunchScreen.storyboard */,
+				C4DD51D822F09C03006B356A /* Info.plist */,
+				C4DD51D022F09BFE006B356A /* LeboncoinWeather.xcdatamodeld */,
+			);
+			path = LeboncoinWeather;
+			sourceTree = "<group>";
+		};
+		C4DD51E022F09C03006B356A /* LeboncoinWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD51E122F09C03006B356A /* LeboncoinWeatherTests.swift */,
+				C4DD51E322F09C03006B356A /* Info.plist */,
+			);
+			path = LeboncoinWeatherTests;
+			sourceTree = "<group>";
+		};
+		C4DD51EB22F09C03006B356A /* LeboncoinWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD51EC22F09C03006B356A /* LeboncoinWeatherUITests.swift */,
+				C4DD51EE22F09C03006B356A /* Info.plist */,
+			);
+			path = LeboncoinWeatherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DD51C522F09BFE006B356A /* LeboncoinWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD51F122F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeather" */;
+			buildPhases = (
+				C4DD51C222F09BFE006B356A /* Sources */,
+				C4DD51C322F09BFE006B356A /* Frameworks */,
+				C4DD51C422F09BFE006B356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeboncoinWeather;
+			productName = LeboncoinWeather;
+			productReference = C4DD51C622F09BFE006B356A /* LeboncoinWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4DD51DC22F09C03006B356A /* LeboncoinWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD51F422F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeatherTests" */;
+			buildPhases = (
+				C4DD51D922F09C03006B356A /* Sources */,
+				C4DD51DA22F09C03006B356A /* Frameworks */,
+				C4DD51DB22F09C03006B356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DD51DF22F09C03006B356A /* PBXTargetDependency */,
+			);
+			name = LeboncoinWeatherTests;
+			productName = LeboncoinWeatherTests;
+			productReference = C4DD51DD22F09C03006B356A /* LeboncoinWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4DD51E722F09C03006B356A /* LeboncoinWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD51F722F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeatherUITests" */;
+			buildPhases = (
+				C4DD51E422F09C03006B356A /* Sources */,
+				C4DD51E522F09C03006B356A /* Frameworks */,
+				C4DD51E622F09C03006B356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DD51EA22F09C03006B356A /* PBXTargetDependency */,
+			);
+			name = LeboncoinWeatherUITests;
+			productName = LeboncoinWeatherUITests;
+			productReference = C4DD51E822F09C03006B356A /* LeboncoinWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DD51BE22F09BFE006B356A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = bessem;
+				TargetAttributes = {
+					C4DD51C522F09BFE006B356A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C4DD51DC22F09C03006B356A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4DD51C522F09BFE006B356A;
+					};
+					C4DD51E722F09C03006B356A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4DD51C522F09BFE006B356A;
+					};
+				};
+			};
+			buildConfigurationList = C4DD51C122F09BFE006B356A /* Build configuration list for PBXProject "LeboncoinWeather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4DD51BD22F09BFE006B356A;
+			productRefGroup = C4DD51C722F09BFE006B356A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DD51C522F09BFE006B356A /* LeboncoinWeather */,
+				C4DD51DC22F09C03006B356A /* LeboncoinWeatherTests */,
+				C4DD51E722F09C03006B356A /* LeboncoinWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DD51C422F09BFE006B356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD51D722F09C03006B356A /* LaunchScreen.storyboard in Resources */,
+				C4DD51D422F09C03006B356A /* Assets.xcassets in Resources */,
+				C4DD51CF22F09BFE006B356A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51DB22F09C03006B356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51E622F09C03006B356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DD51C222F09BFE006B356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD51CC22F09BFE006B356A /* ViewController.swift in Sources */,
+				C4DD51CA22F09BFE006B356A /* AppDelegate.swift in Sources */,
+				C4DD51D222F09BFE006B356A /* LeboncoinWeather.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51D922F09C03006B356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD51E222F09C03006B356A /* LeboncoinWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD51E422F09C03006B356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD51ED22F09C03006B356A /* LeboncoinWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DD51DF22F09C03006B356A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DD51C522F09BFE006B356A /* LeboncoinWeather */;
+			targetProxy = C4DD51DE22F09C03006B356A /* PBXContainerItemProxy */;
+		};
+		C4DD51EA22F09C03006B356A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DD51C522F09BFE006B356A /* LeboncoinWeather */;
+			targetProxy = C4DD51E922F09C03006B356A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4DD51CD22F09BFE006B356A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DD51CE22F09BFE006B356A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4DD51D522F09C03006B356A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DD51D622F09C03006B356A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4DD51EF22F09C03006B356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4DD51F022F09C03006B356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4DD51F222F09C03006B356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4DD51F322F09C03006B356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4DD51F522F09C03006B356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeboncoinWeather.app/LeboncoinWeather";
+			};
+			name = Debug;
+		};
+		C4DD51F622F09C03006B356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeboncoinWeather.app/LeboncoinWeather";
+			};
+			name = Release;
+		};
+		C4DD51F822F09C03006B356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeboncoinWeather;
+			};
+			name = Debug;
+		};
+		C4DD51F922F09C03006B356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeboncoinWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.bessem.LeboncoinWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeboncoinWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DD51C122F09BFE006B356A /* Build configuration list for PBXProject "LeboncoinWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD51EF22F09C03006B356A /* Debug */,
+				C4DD51F022F09C03006B356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD51F122F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD51F222F09C03006B356A /* Debug */,
+				C4DD51F322F09C03006B356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD51F422F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD51F522F09C03006B356A /* Debug */,
+				C4DD51F622F09C03006B356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD51F722F09C03006B356A /* Build configuration list for PBXNativeTarget "LeboncoinWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD51F822F09C03006B356A /* Debug */,
+				C4DD51F922F09C03006B356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4DD51D022F09BFE006B356A /* LeboncoinWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4DD51D122F09BFE006B356A /* LeboncoinWeather.xcdatamodel */,
+			);
+			currentVersion = C4DD51D122F09BFE006B356A /* LeboncoinWeather.xcdatamodel */;
+			path = LeboncoinWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4DD51BE22F09BFE006B356A /* Project object */;
+}
