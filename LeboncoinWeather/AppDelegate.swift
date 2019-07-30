@@ -17,12 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        WeatherService.forecast(withLocation: nil) { forecastArray in
-            if let forecastArray  = forecastArray {
-                print(forecastArray[0])
-                
-            }
-        }
         return true
     }
 

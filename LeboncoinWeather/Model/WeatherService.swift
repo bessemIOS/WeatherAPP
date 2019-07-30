@@ -11,10 +11,12 @@ import CoreLocation
 
 class WeatherService {
     
-    static func forecast (withLocation location:CLLocationCoordinate2D?, completion: @escaping ([WeatherModel]?) -> ()) {
+    static func forecast (withLocation location:CLLocationCoordinate2D, completion: @escaping ([WeatherModel]?) -> ()) {
         
         // endpoint
-        let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "46.74004", logintude: "-1.60834")
+       // let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "46.74004", logintude: "-1.60834")
+        
+        let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "\(location.latitude)", longitude: "\(location.longitude)")
         let weatherUrlRequest = weatherEndpoint.request
         
         let task = URLSession.shared.dataTask(with: weatherUrlRequest) { (data:Data?, response:URLResponse?, error:Error?) in

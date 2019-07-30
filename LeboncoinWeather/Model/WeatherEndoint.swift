@@ -10,7 +10,7 @@ import Foundation
 
 enum WeatherEndpoint {
     
-    case getForecastArray(latitude: String, logintude: String)
+    case getForecastArray(latitude: String, longitude: String)
     
     var request: URLRequest {
         var components = URLComponents(string: baseURL)!

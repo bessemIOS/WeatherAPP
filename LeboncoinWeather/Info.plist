@@ -56,5 +56,7 @@
             </dict>
         </dict>
     </dict>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Nous avons besoin de votre position pour afficher les prévisions météorologiques.</string>
 </dict>
 </plist>

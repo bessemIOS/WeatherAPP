@@ -18,6 +18,7 @@
 		C4DD51FE22F09C55006B356A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51FD22F09C55006B356A /* WeatherModel.swift */; };
 		C4DD520022F09C68006B356A /* WeatherEndoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */; };
 		C4DD520222F09C70006B356A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD520122F09C70006B356A /* WeatherService.swift */; };
+		C4DD520422F09D86006B356A /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD520322F09D86006B356A /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C4DD51FD22F09C55006B356A /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEndoint.swift; sourceTree = "<group>"; };
 		C4DD520122F09C70006B356A /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		C4DD520322F09D86006B356A /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		C4DD51FB22F09C1C006B356A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4DD520322F09D86006B356A /* LocationService.swift */,
 				C4DD520122F09C70006B356A /* WeatherService.swift */,
 				C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */,
 			);
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DD520422F09D86006B356A /* LocationService.swift in Sources */,
 				C4DD51CC22F09BFE006B356A /* ViewController.swift in Sources */,
 				C4DD520022F09C68006B356A /* WeatherEndoint.swift in Sources */,
 				C4DD51CA22F09BFE006B356A /* AppDelegate.swift in Sources */,
