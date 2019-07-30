@@ -15,6 +15,9 @@
 		C4DD51D722F09C03006B356A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DD51D522F09C03006B356A /* LaunchScreen.storyboard */; };
 		C4DD51E222F09C03006B356A /* LeboncoinWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51E122F09C03006B356A /* LeboncoinWeatherTests.swift */; };
 		C4DD51ED22F09C03006B356A /* LeboncoinWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51EC22F09C03006B356A /* LeboncoinWeatherUITests.swift */; };
+		C4DD51FE22F09C55006B356A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51FD22F09C55006B356A /* WeatherModel.swift */; };
+		C4DD520022F09C68006B356A /* WeatherEndoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */; };
+		C4DD520222F09C70006B356A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD520122F09C70006B356A /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C4DD51E822F09C03006B356A /* LeboncoinWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD51EC22F09C03006B356A /* LeboncoinWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinWeatherUITests.swift; sourceTree = "<group>"; };
 		C4DD51EE22F09C03006B356A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DD51FD22F09C55006B356A /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEndoint.swift; sourceTree = "<group>"; };
+		C4DD520122F09C70006B356A /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		C4DD51C822F09BFE006B356A /* LeboncoinWeather */ = {
 			isa = PBXGroup;
 			children = (
+				C4DD51FB22F09C1C006B356A /* Model */,
+				C4DD51FA22F09C0D006B356A /* Services */,
 				C4DD51C922F09BFE006B356A /* AppDelegate.swift */,
 				C4DD51CB22F09BFE006B356A /* ViewController.swift */,
 				C4DD51CD22F09BFE006B356A /* Main.storyboard */,
@@ -126,6 +134,23 @@
 				C4DD51EE22F09C03006B356A /* Info.plist */,
 			);
 			path = LeboncoinWeatherUITests;
+			sourceTree = "<group>";
+		};
+		C4DD51FA22F09C0D006B356A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD51FD22F09C55006B356A /* WeatherModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4DD51FB22F09C1C006B356A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD520122F09C70006B356A /* WeatherService.swift */,
+				C4DD51FF22F09C68006B356A /* WeatherEndoint.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DD51CC22F09BFE006B356A /* ViewController.swift in Sources */,
+				C4DD520022F09C68006B356A /* WeatherEndoint.swift in Sources */,
 				C4DD51CA22F09BFE006B356A /* AppDelegate.swift in Sources */,
+				C4DD51FE22F09C55006B356A /* WeatherModel.swift in Sources */,
+				C4DD520222F09C70006B356A /* WeatherService.swift in Sources */,
 				C4DD51D222F09BFE006B356A /* LeboncoinWeather.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
