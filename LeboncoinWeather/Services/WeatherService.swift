@@ -11,12 +11,16 @@ import CoreLocation
 
 class WeatherService {
     
-    static func forecast (withLocation location:CLLocationCoordinate2D, completion: @escaping ([WeatherModel]?) -> ()) {
+    // MARK: - Singleton
+    static let shared = WeatherService()
+    
+    
+    // MARK: - Services
+    func fetchForecast (withLocation location:CLLocationCoordinate2D?, completion: @escaping ([WeatherModel]?) -> ()) {
         
         // endpoint
-       // let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "46.74004", logintude: "-1.60834")
-        
-        let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "\(location.latitude)", longitude: "\(location.longitude)")
+        let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "46.74004", longitude: "-1.60834")
+        // let weatherEndpoint = WeatherEndpoint.getForecastArray(latitude: "\(location.latitude)", longitude: "\(location.longitude)")
         let weatherUrlRequest = weatherEndpoint.request
         
         let task = URLSession.shared.dataTask(with: weatherUrlRequest) { (data:Data?, response:URLResponse?, error:Error?) in
@@ -33,21 +37,26 @@ class WeatherService {
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                         
                         for (key, value) in json {
-                            let dateFormatterGet = DateFormatter()
-                            dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
-                            if let time = dateFormatterGet.date(from: key) {
+
+                            if let date = Date.dateFromCustomString(customString: key) {
                                 guard let dailyForcast = value as? [String : Any] else { return }
+                                let dateWithoutTime = date.reduceToMonthDayYear()
+                                let weatherModel: WeatherModel
+                                if let hour = date.getHour() {
+                                    weatherModel = WeatherModel(date: dateWithoutTime, hour: hour, json: dailyForcast)
+                                } else {
+                                    weatherModel = WeatherModel(date: dateWithoutTime, hour: nil, json: dailyForcast)
+                                }
                                 
-                                let weatherModel = WeatherModel(time: time, json: dailyForcast)
                                 forecastArray.append(weatherModel)
                                 
                             }
                             
                         }
-                         completion(forecastArray)
+                        completion(forecastArray)
                     }
                 } catch {
-                     completion(nil)
+                    completion(nil)
                     print(error.localizedDescription)
                 }
                 
