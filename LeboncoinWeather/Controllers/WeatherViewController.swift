@@ -31,8 +31,6 @@ class WeatherViewController: UIViewController {
         self.forecastTableView.delegate = self
         self.forecastTableView.tableFooterView = UIView()
         
-        self.weatherViewModel.fetchForecast(for: nil)
-        
         // Location service callbacks
         weatherViewModel.didFinishFetch = {
             DispatchQueue.main.async {
@@ -44,6 +42,7 @@ class WeatherViewController: UIViewController {
         locationService.newestLocation = { coordinate in
             guard let coordinate = coordinate else { return }
             print("Location is: \(coordinate)")
+            self.weatherViewModel.fetchForecast(for: coordinate)
             
             
         }
